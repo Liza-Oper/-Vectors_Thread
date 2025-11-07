@@ -18,18 +18,19 @@
 Мы должны показать, что многопоточный метод работает быстрее, чем однопоточный на больших векторах
 
 **This code was implemented for the following task:**
-1.Create a vector of one million elements and fill it with random numbers.
-2.Compute the sum of this vector in a single thread (i.e., using a regular loop).
-3.Measure the execution time of the program.
-4.Compute the sum of the vector in parts, assigning each part to a separate thread.
-5.Measure the execution time and compare it with the previous method.
+1. Create a vector of one million elements and fill it with random numbers.
+2. Compute the sum of this vector in a single thread (i.e., using a regular loop).
+3. Measure the execution time of the program.
+4. Compute the sum of the vector in parts, assigning each part to a separate thread.
+5. Measure the execution time and compare it with the previous method.
 
 **As a result, the project is implemented as follows:**
 Random numbers from 0 to 99 are generated and used to fill the vector.
 Once the vector is created, its sum is computed in two ways:
-1.Using a standard loop to iterate through the elements and calculate the sum sequentially.
-2.Dividing the vector into four parts and calculating the sums of these parts in parallel threads, then combining the results.
+1. Using a standard loop to iterate through the elements and calculate the sum sequentially.
+2. Dividing the vector into four parts and calculating the sums of these parts in parallel threads, then combining the results.
 After each method, the execution time is measured.
+
 
 **Expected outcome:**
 The goal is to demonstrate that the multi-threaded method performs faster than the single-threaded method for large vectors.
